@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.230887aa.chunk.css",
-  "main.js": "/static/js/main.abc7fce7.chunk.js",
-  "main.js.map": "/static/js/main.abc7fce7.chunk.js.map",
-  "static/js/1.84b1a5ba.chunk.js": "/static/js/1.84b1a5ba.chunk.js",
-  "static/js/1.84b1a5ba.chunk.js.map": "/static/js/1.84b1a5ba.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.230887aa.chunk.css.map": "/static/css/main.230887aa.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.7b8b413d9cba32cf59e7f7b5acd59cb6.js": "/precache-manifest.7b8b413d9cba32cf59e7f7b5acd59cb6.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/simple-login/static/css/main.230887aa.chunk.css",
+  "main.js": "/simple-login/static/js/main.abc7fce7.chunk.js",
+  "main.js.map": "/simple-login/static/js/main.abc7fce7.chunk.js.map",
+  "static/js/1.84b1a5ba.chunk.js": "/simple-login/static/js/1.84b1a5ba.chunk.js",
+  "static/js/1.84b1a5ba.chunk.js.map": "/simple-login/static/js/1.84b1a5ba.chunk.js.map",
+  "runtime~main.js": "/simple-login/static/js/runtime~main.944300a3.js",
+  "runtime~main.js.map": "/simple-login/static/js/runtime~main.944300a3.js.map",
+  "static/css/main.230887aa.chunk.css.map": "/simple-login/static/css/main.230887aa.chunk.css.map",
+  "index.html": "/simple-login/index.html",
+  "precache-manifest.411ce7d8482c861685f8aec812add950.js": "/simple-login/precache-manifest.411ce7d8482c861685f8aec812add950.js",
+  "service-worker.js": "/simple-login/service-worker.js"
 }
