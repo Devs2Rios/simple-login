@@ -1,5 +1,6 @@
 {
     "name": "react-complete-guide",
+    "homepage": "https://devs2rios.github.io/simple-login/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
