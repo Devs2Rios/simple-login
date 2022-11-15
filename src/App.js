@@ -1,31 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Login from './components/Login/Login';
 import Home from './components/Home/Home';
 import MainHeader from './components/MainHeader/MainHeader';
 
-function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+// Dummy account
+const dummydatabase = { 'dummy@account.xyz': '1234567890' };
 
-  const loginHandler = (email, password) => {
-    // We should of course check email and password
-    // But it's just a dummy/ demo anyways
-    setIsLoggedIn(true);
-  };
+export default function App() {
+    const [isLoggedIn, setIsLoggedIn] = useState(false),
+        [database] = useState(dummydatabase);
 
-  const logoutHandler = () => {
-    setIsLoggedIn(false);
-  };
+    useEffect(() => {
+        const userIsLogged = localStorage.getItem('isLoggedIn');
+        setIsLoggedIn(userIsLogged === '1' ? true : false);
+    }, []);
 
-  return (
-    <React.Fragment>
-      <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
-      <main>
-        {!isLoggedIn && <Login onLogin={loginHandler} />}
-        {isLoggedIn && <Home onLogout={logoutHandler} />}
-      </main>
-    </React.Fragment>
-  );
+    const loginHandler = (email, password) => {
+        // Check that password and email match
+        if (database[email] === password) {
+            // Set a login storage persistent value
+            localStorage.setItem('isLoggedIn', '1');
+            setIsLoggedIn(true);
+        }
+    };
+
+    const logoutHandler = () => {
+        // Clears storage for logout persistency
+        localStorage.removeItem('isLoggedIn');
+        setIsLoggedIn(false);
+    };
+
+    return (
+        <>
+            <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
+            <main>
+                {!isLoggedIn && (
+                    <Login database={database} onLogin={loginHandler} />
+                )}
+                {isLoggedIn && <Home onLogout={logoutHandler} />}
+            </main>
+        </>
+    );
 }
-
-export default App;
