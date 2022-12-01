@@ -22,6 +22,8 @@ export default function App() {
             // Set a login storage persistent value
             localStorage.setItem('isLoggedIn', '1');
             setIsLoggedIn(true);
+        } else {
+            window.alert('Wrong password');
         }
     };
 
