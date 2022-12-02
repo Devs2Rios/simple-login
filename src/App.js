@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-
+// Components
 import Login from './components/Login/Login';
 import Home from './components/Home/Home';
 import MainHeader from './components/MainHeader/MainHeader';
-
+// Contexts
+import AuthContext from './store/auth-context';
 // Dummy account
 const dummydatabase = { 'dummy@account.xyz': '1234567890' };
 
@@ -34,14 +35,18 @@ export default function App() {
     };
 
     return (
-        <>
-            <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
+        <AuthContext.Provider
+            value={{
+                isLoggedIn: isLoggedIn,
+                onLogin: loginHandler,
+                onLogout: logoutHandler,
+            }}
+        >
+            <MainHeader />
             <main>
-                {!isLoggedIn && (
-                    <Login database={database} onLogin={loginHandler} />
-                )}
-                {isLoggedIn && <Home onLogout={logoutHandler} />}
+                {!isLoggedIn && <Login database={database} />}
+                {isLoggedIn && <Home />}
             </main>
-        </>
+        </AuthContext.Provider>
     );
 }
