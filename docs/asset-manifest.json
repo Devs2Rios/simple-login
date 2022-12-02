@@ -1,13 +1,13 @@
 {
-  "main.css": "/simple-login/static/css/main.230887aa.chunk.css",
-  "main.js": "/simple-login/static/js/main.3dd7c249.chunk.js",
-  "main.js.map": "/simple-login/static/js/main.3dd7c249.chunk.js.map",
-  "static/js/1.727be310.chunk.js": "/simple-login/static/js/1.727be310.chunk.js",
-  "static/js/1.727be310.chunk.js.map": "/simple-login/static/js/1.727be310.chunk.js.map",
+  "main.css": "/simple-login/static/css/main.c294955b.chunk.css",
+  "main.js": "/simple-login/static/js/main.3cd419cd.chunk.js",
+  "main.js.map": "/simple-login/static/js/main.3cd419cd.chunk.js.map",
+  "static/js/1.ab1089cf.chunk.js": "/simple-login/static/js/1.ab1089cf.chunk.js",
+  "static/js/1.ab1089cf.chunk.js.map": "/simple-login/static/js/1.ab1089cf.chunk.js.map",
   "runtime~main.js": "/simple-login/static/js/runtime~main.944300a3.js",
   "runtime~main.js.map": "/simple-login/static/js/runtime~main.944300a3.js.map",
-  "static/css/main.230887aa.chunk.css.map": "/simple-login/static/css/main.230887aa.chunk.css.map",
+  "static/css/main.c294955b.chunk.css.map": "/simple-login/static/css/main.c294955b.chunk.css.map",
   "index.html": "/simple-login/index.html",
-  "precache-manifest.5bc38b5e6612ac3fe44ac4a06668592c.js": "/simple-login/precache-manifest.5bc38b5e6612ac3fe44ac4a06668592c.js",
+  "precache-manifest.fe626f401bd816b653903f37c22cbfd2.js": "/simple-login/precache-manifest.fe626f401bd816b653903f37c22cbfd2.js",
   "service-worker.js": "/simple-login/service-worker.js"
 }
